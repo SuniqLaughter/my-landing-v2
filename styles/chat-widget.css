@@ -1,0 +1,45 @@
+/* Custom styles for n8n chat widget */
+.n8n-chat-window {
+  font-family: inherit !important;
+}
+
+.n8n-chat-window button {
+  font-family: inherit !important;
+}
+
+.n8n-chat-window input {
+  font-family: inherit !important;
+}
+
+/* Ensure the chat container is properly sized */
+#n8n-chat-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom scrollbar for the chat */
+.n8n-chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.n8n-chat-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.n8n-chat-messages::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 3px;
+}
+
+.n8n-chat-messages::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 640px) {
+  .n8n-chat-window {
+    width: calc(100vw - 32px) !important;
+    max-width: 350px;
+    right: 16px !important;
+  }
+}
